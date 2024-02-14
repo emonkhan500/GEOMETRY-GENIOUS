@@ -37,12 +37,12 @@
           <h2 class="text-center">Rectangle</h2>
           <p> Area{A}= W * L</p>
         <div class="flex justify-center items-center gap-3">
-          <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span >cm</span>
-          <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span>cm</span>
+          <input id="rec-width" class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span >cm</span>
+          <input id="rec-length" class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span>cm</span>
         </div>
-        <p>Area: <span></span> cm<sup>2</sup></p>
+        <p>Area: <span id="rec-span"></span> cm<sup>2</sup></p>
           <div class="card-actions justify-end">
-            <button class="btn w-full btn-primary">Calculate</button>
+            <button onclick="rectangle()" class="btn w-full btn-primary">Calculate</button>
           </div>
         </div>
       </div>
@@ -53,12 +53,12 @@
           <h2 class="text-center">Parallelogram</h2>
           <p> Area{A}= B * H</p>
         <div class="flex justify-center items-center gap-3">
-          <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span >cm</span>
-          <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span>cm</span>
+          <input id="par-base" class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span >cm</span>
+          <input id="par-height" class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span>cm</span>
         </div>
-        <p>Area: <span></span> cm<sup>2</sup></p>
+        <p>Area: <span id="par-span"></span> cm<sup>2</sup></p>
           <div class="card-actions justify-end">
-            <button class="btn w-full btn-primary">Calculate</button>
+            <button onclick="parallelogram()" class="btn w-full btn-primary">Calculate</button>
           </div>
         </div>
       </div>
@@ -96,15 +96,15 @@
       </div>
       <!-- ellipse -->
     <div class="card card-compact w-96 bg-base-100 shadow-xl">
-        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+        <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
         <div class="card-body text-center">
-          <h2 class="text-center">Triangle</h2>
+          <h2 class="text-center">Ellipse</h2>
           <p> Area{A}= π ab</p>
         <div class="flex justify-center items-center gap-3">
           <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span >cm</span>
           <input class="bg-gray-300 w-24 p-2 rounded-md" type="text"> <span>cm</span>
         </div>
-        <p>Area: <span></span> cm<sup>2</sup></p>
+        <p>Area: <span ></span> cm<sup>2</sup></p>
           <div class="card-actions justify-end">
             <button class="btn w-full btn-primary">Calculate</button>
           </div>
@@ -123,7 +123,9 @@
 
     </main>
 
-
-<script src="reactiangle.js"></script>
+<script src="common.js"></script>
+<script src="triangle.js"></script>
+<script src="rectangle.js"></script>
+<script src="parallelogram.js"></script>
 </body>
 </html>
